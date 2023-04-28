@@ -1,0 +1,20 @@
+@import "../../colors.scss";
+
+.footer {
+  height: 137px;
+  background: $emerald;
+  .container {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    .logo {
+      width: 141px;
+    }
+    .contacts {
+      text-align: end;
+      color: white;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }  
+}

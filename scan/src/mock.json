@@ -1,0 +1,45 @@
+{
+  "rates": [
+    {
+      "name": "Beginner",
+      "appointment": "Для небольшого исследования",
+      "newPrice": "799",
+      "oldPrice": "1200",
+      "priceplan": "или 150 ₽/мес. при рассрочке на 24 мес.",
+      "includes": [
+        "Безлимитная история запросов",
+        "Безопасная сделка",
+        "Поддержка 24/7"
+      ],
+      "color": "#FFB64F",
+      "icon": "icon-beginner.png"
+    },
+    {
+      "name": "Pro",
+      "appointment": "Для HR и фрилансеров",
+      "newPrice": "1299",
+      "oldPrice": "2600",
+      "priceplan": "или 279 ₽/мес. при рассрочке на 24 мес.",
+      "includes": [
+        "Все пункты тарифа Beginner",
+        "Экспорт истории",
+        "Рекомендации по приоритетам"
+      ],
+      "color": "#7CE3E1",
+      "icon": "icon-pro.png"
+    },
+    {
+      "name": "Business",
+      "appointment": "Для корпоративных клиентов",
+      "newPrice": "2379",
+      "oldPrice": "3700",
+      "includes": [
+        "Все пункты тарифа Pro",
+        "Безлимитное количество запросов",
+        "Приоритетная поддержка"
+      ],
+      "color": "black",
+      "icon": "icon-business.png"
+    }
+  ]
+}

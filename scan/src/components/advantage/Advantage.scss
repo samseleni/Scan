@@ -1,0 +1,20 @@
+$WIDTH: 400px; 
+
+.block {
+  height: 225px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  font-weight: 400px;
+  font-size: 18px;
+  height: 100%;
+  min-width: $WIDTH;
+  max-width: $WIDTH;
+  margin-right: 30px;
+  .icon {
+    width: 64px;
+  }
+  .text {
+    margin-top: 19px;
+  }
+}

@@ -1,0 +1,36 @@
+.slider {
+  display: flex;
+  width: 100%;
+  height: 255px;
+  position: relative;
+  .carousel {
+    height: 100%;
+    width: 99%;
+    padding: 15px;
+    overflow: hidden;
+    .all-items-container {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      transition: translate;
+      transition: transform 300ms ease-in-out;
+      align-items: center;
+      margin-right: 100px;
+    }  
+  }
+  .arrow {
+    height: 39px;
+    cursor: pointer;
+    width: 39px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    opacity: 20%;
+  }
+  .left {  
+    left: 5px;
+  }
+  .right {
+    right: -31px;
+  }
+}

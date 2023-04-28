@@ -1,0 +1,87 @@
+@import "../../colors.scss";
+
+%text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+}
+
+.rate {
+  width: 415px;
+  height: 540px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 43px;
+  .head {
+    padding-left: 30px; 
+    position: relative;
+    .title {
+      margin: 0;
+      padding: 30px 0 10px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .appointment {
+      @extend %text;
+      padding-bottom: 34px;
+      margin: 0;
+    }
+    .icon {
+      width: 92px;
+      height: auto;
+      position: absolute;
+      top: 11px;
+      right: 15px;
+
+    }
+  }
+  .main {
+    padding-left: 30px;
+    .price {
+      padding-top: 33px;
+      line-height: 36px;
+      font-weight: 500;
+      height: 160px;
+      .newprice {
+        font-size: 30px;
+        margin: 0 19px 10px 0;
+      }
+      .oldprice {
+        font-size: 25px;
+        opacity: 50%;
+        text-decoration: line-through;
+      }
+      .plan {
+        @extend %text;
+      }
+    }
+    .list-container {
+      margin-bottom: 55px;
+      .list-name {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24.2px;
+      }
+      .list {
+        padding-left: 25px;
+        .item {
+          list-style-type: none;
+          list-style-image: url("../../assets/marker.png"); 
+          @extend %text;          
+        }
+      }    
+    }
+    .button {
+      width: 355px;
+      height: 59px;
+      font: inherit;
+      font-size: 20px;
+      background: $blue;
+      border-radius: 5px;
+      border: none;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      color: white;
+    }
+  }
+}

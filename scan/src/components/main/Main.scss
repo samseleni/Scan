@@ -1,0 +1,74 @@
+@import "../../colors.scss";
+
+@font-face {
+  font-family: 'Ferry';
+  src: url('../../fonts/Ferry/ferry_black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+%title {
+  font-family: 'Ferry';
+  font-size: 60px;
+  font-weight: 900;
+  max-width: 743px;
+  padding: 69px 0 20px;
+  margin: 0;
+  line-height: 72px;
+}
+
+%subtitle {
+  @extend %title;
+  font-size: 45px;
+  line-height: 54px;
+  padding: 0 0 70px;
+}
+
+.main {
+  .description {
+    background: url('../../assets/img-page_1.png') 700px 24px no-repeat;
+    background-size: 629px 620px, contain;
+    height: 644px;
+    .title {
+      @extend %title;
+    }
+    .text {
+      width: 534px;
+      font-size: 20px;
+      font-weight: 400px;
+      margin: 0 0 70px 0;
+    }
+    .btn {
+      width: 335px;
+      height: 59px;
+      background: $blue;
+      border: none;
+      border-radius: 5px;
+      font-family: inherit;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+  .advantages {
+    height: 995px;
+    background: url('../../assets/img-page_2.png') bottom no-repeat;
+    background-size: contain;
+    margin-top: 109px;
+    .subtitle {
+      @extend %subtitle;
+    }
+  }
+  .rates {
+    padding-top: 107.48px;
+    min-height: 889px;
+    .subtitle {
+      @extend %subtitle;
+    }
+    .rates-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
